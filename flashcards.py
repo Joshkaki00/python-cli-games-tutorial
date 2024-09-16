@@ -9,3 +9,8 @@ with open('me-capitals.json', 'r') as f:
 for i in data["cards"]:
     guess = input(i["q"] + ">")
     print(guess)
+
+    if guess == i["a"]:
+        print("Correct!")
+    else:
+        print("Incorrect!")
