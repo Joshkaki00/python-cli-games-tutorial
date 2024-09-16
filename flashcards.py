@@ -10,7 +10,7 @@ for i in data["cards"]:
     guess = input(i["q"] + ">")
     print(guess)
 
-    if guess == i["a"]:
+    if guess.lower() == i["a"].lower():
         print("Correct!")
     else:
         print("Incorrect! The correct answer was", i["a"])
