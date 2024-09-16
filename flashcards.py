@@ -5,12 +5,18 @@ import json
 with open('me-capitals.json', 'r') as f:
     data = json.load(f)
 
+#initialize total as the length of the cards array
+total = len(data["cards"])
+#initialize score as 0
+score = 0
+
 #for loop iterator to iterate all cards
 for i in data["cards"]:
     guess = input(i["q"] + ">")
     print(guess)
 
     if guess.lower() == i["a"].lower():
+        score
         print("Correct!")
     else:
         print("Incorrect! The correct answer was", i["a"])
