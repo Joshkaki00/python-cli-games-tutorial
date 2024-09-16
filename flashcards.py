@@ -7,4 +7,5 @@ with open('me-capitals.json', 'r') as f:
 
 #for loop iterator to iterate all cards
 for i in data["cards"]:
-    print(i)
+    guess = input(i["q"] + ">")
+    print(guess)
