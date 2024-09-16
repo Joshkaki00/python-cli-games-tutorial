@@ -5,6 +5,6 @@ import json
 with open('me-capitals.json', 'r') as f:
     data = json.load(f)
 
-    #for loop iterator to iterate all cards
-    for i in data["cards"]:
-        print(i)
+#for loop iterator to iterate all cards
+for i in data["cards"]:
+    print(i)
