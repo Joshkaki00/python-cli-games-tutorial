@@ -16,7 +16,8 @@ for i in data["cards"]:
     print(guess)
 
     if guess.lower() == i["a"].lower():
-        score
-        print("Correct!")
+        score += 1
+        print(f"Correct! Current score: {score}/{total}")
     else:
         print("Incorrect! The correct answer was", i["a"])
+        print(f"Current score: {score}/{total}")
