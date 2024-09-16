@@ -1,16 +1,16 @@
-#import the json file module from python3
+# import the json file module from python3
 import json
 
-#open the file and parse the JSON
+# open the file and parse the JSON
 with open('me-capitals.json', 'r') as f:
     data = json.load(f)
 
-#initialize total as the length of the cards array
+# initialize total as the length of the cards array
 total = len(data["cards"])
-#initialize score as 0
+# initialize score as 0
 score = 0
 
-#for loop iterator to iterate all cards
+# for loop iterator to iterate all cards
 for i in data["cards"]:
     guess = input(i["q"] + ">")
     print(guess)
