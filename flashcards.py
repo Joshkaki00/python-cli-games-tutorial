@@ -13,4 +13,4 @@ for i in data["cards"]:
     if guess == i["a"]:
         print("Correct!")
     else:
-        print("Incorrect!")
+        print("Incorrect! The correct answer was", i["a"])
